@@ -1,1 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DomainLaunch helps UK businesses find, acquire and manage domain names.">
+  <meta name="theme-color" content="#0b1530">
+  <title>DomainLaunch — The right domain. A stronger online identity.</title>
+  <style>
+    :root{--navy:#0b1530;--navy2:#101f42;--blue:#4d8dff;--cyan:#67d8ed;--ink:#15213a;--muted:#64718a;--pale:#f4f7fc;--line:#e4eaf3;--white:#fff;--radius:20px;--shadow:0 18px 50px rgba(12,30,67,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);line-height:1.6;background:#fff}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .top{background:var(--navy);color:#dbe7ff;font-size:13px;text-align:center;padding:9px 16px}.top strong{color:#fff}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-size:20px;font-weight:800;letter-spacing:-.6px;color:var(--navy)}.logo{width:36px;height:36px;border-radius:11px;background:linear-gradient(140deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#fff;font-weight:900;font-size:20px;box-shadow:0 7px 18px #4d8dff44}.links{display:flex;gap:28px;align-items:center;font-size:14px;font-weight:650;color:#46536b}.links a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:12px;padding:13px 19px;background:var(--blue);color:#fff;font-weight:750;font-size:14px;box-shadow:0 8px 20px #4d8dff38;transition:.2s}.btn:hover{transform:translateY(-2px);background:#3678ee}.btn.ghost{background:#fff;color:var(--navy);box-shadow:none;border:1px solid #d8e2f1}.menu{display:none}
+    .hero{background:radial-gradient(ellipse at 82% 22%,#254d8c 0,transparent 36%),linear-gradient(125deg,#0b1530,#11244a 65%,#132e5b);color:#fff;padding:94px 0 90px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid #ffffff30;background:#ffffff0d;border-radius:99px;padding:7px 12px;color:#cfe0ff;font-size:12px;font-weight:750;letter-spacing:.7px;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:#64d9ec;box-shadow:0 0 0 4px #64d9ec22}.hero h1{font-size:clamp(42px,5.4vw,66px);line-height:1.06;letter-spacing:-2.8px;margin:22px 0 20px;max-width:650px}.hero h1 span{background:linear-gradient(90deg,#72aaff,#7be2ed);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:18px;line-height:1.7;color:#c3d1e9;max-width:550px;margin:0 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero .btn.ghost{background:#ffffff12;border-color:#ffffff38;color:#fff}.hero-note{font-size:12px;color:#9fb2d2;margin-top:18px}.visual{position:relative;min-height:340px;display:grid;place-items:center}.orbit{position:absolute;width:330px;height:330px;border:1px solid #ffffff24;border-radius:50%}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #ffffff18;border-radius:50%;inset:30px}.orbit:after{inset:65px}.domain-card{position:relative;width:min(100%,370px);padding:25px;border:1px solid #ffffff2b;border-radius:22px;background:linear-gradient(145deg,#ffffff20,#ffffff09);backdrop-filter:blur(15px);box-shadow:0 25px 70px #0005;transform:rotate(-3deg)}.domain-card .tiny{font-size:11px;color:#b9c9e4;text-transform:uppercase;letter-spacing:1.3px}.domain-card h3{font-size:28px;letter-spacing:-1px;margin:10px 0 18px}.domain-row{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #ffffff25;padding:12px 0;color:#dce8fa;font-size:13px}.domain-row strong{color:#83e0ec}.spark{position:absolute;right:5%;top:10%;font-size:26px;color:#83e0ec}.spark.two{left:1%;top:auto;bottom:12%;font-size:18px}
+    .trust{border-bottom:1px solid var(--line);background:#fff}.trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:24px 0}.trust-item{display:flex;align-items:center;justify-content:center;gap:10px;color:#56647c;font-size:13px;font-weight:650}.trust-item b{color:var(--blue);font-size:18px}
+    section{padding:88px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 42px}.kicker{font-size:12px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:var(--blue)}h2{font-size:clamp(30px,4vw,43px);line-height:1.15;letter-spacing:-1.5px;color:var(--navy);margin:10px 0 14px}.section-head p{color:var(--muted);margin:0;font-size:16px}.services{background:var(--pale)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 5px 20px #10244a08}.iconbox{width:48px;height:48px;border-radius:14px;background:#edf4ff;color:var(--blue);display:grid;place-items:center;font-size:23px}.card h3{font-size:20px;color:var(--navy);margin:19px 0 8px}.card p{color:var(--muted);font-size:14px;margin:0 0 17px}.card ul{list-style:none;padding:0;margin:0;color:#45536b;font-size:13px}.card li{padding:7px 0;border-top:1px solid #eef1f6}.card li:before{content:"✓";color:#2586d9;font-weight:900;margin-right:9px}
+    .how-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.how-intro p{color:var(--muted)}.steps{display:grid;gap:22px}.step{display:grid;grid-template-columns:48px 1fr;gap:17px}.num{width:42px;height:42px;border-radius:13px;background:#edf4ff;color:var(--blue);font-weight:850;display:grid;place-items:center}.step h3{margin:0 0 4px;color:var(--navy);font-size:17px}.step p{margin:0;color:var(--muted);font-size:14px}
+    .pricing{background:var(--pale)}.price-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:27px;position:relative}.price-card.featured{border:2px solid var(--blue);box-shadow:var(--shadow)}.tag{position:absolute;right:18px;top:18px;background:#eaf2ff;color:#286bd1;border-radius:99px;padding:5px 9px;font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.5px}.price-card h3{margin:0;color:var(--navy);font-size:19px}.price-card .desc{font-size:13px;color:var(--muted);min-height:44px}.price{font-size:34px;letter-spacing:-1.5px;font-weight:850;color:var(--navy);margin:18px 0 2px}.price small{font-size:13px;font-weight:500;color:var(--muted);letter-spacing:0}.price-note{font-size:11px;color:var(--muted)}.price-card ul{padding:0;list-style:none;margin:20px 0 24px;font-size:13px;color:#46536b}.price-card li{padding:7px 0}.price-card li:before{content:"✓";color:#2586d9;font-weight:900;margin-right:9px}.price-card .btn{width:100%}.disclaimer{text-align:center;color:var(--muted);font-size:12px;margin:22px auto 0;max-width:760px}
+    .cta{padding:0 0 88px}.cta-panel{background:linear-gradient(120deg,#10234a,#173c72);border-radius:26px;padding:48px;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:30px;overflow:hidden;position:relative}.cta-panel:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #ffffff20;border-radius:50%;right:18%;top:-140px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff05}.cta-panel h2{color:#fff;margin:0 0 9px;font-size:34px}.cta-panel p{color:#c1d0e8;margin:0;max-width:560px;font-size:14px}.cta-panel .btn{position:relative;z-index:1;white-space:nowrap}
+    .faq{background:#fff}.faq-list{max-width:800px;margin:auto;display:grid;gap:12px}.faq details{border:1px solid var(--line);border-radius:14px;padding:17px 20px;background:#fff}.faq summary{font-weight:750;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}.faq summary:after{content:"+";color:var(--blue);font-size:20px;line-height:1}.faq details[open] summary:after{content:"−"}.faq details p{color:var(--muted);font-size:14px;margin:13px 0 2px}
+    .contact{background:var(--pale)}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px}.contact-copy p{color:var(--muted)}.contact-box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:27px}.contact-box label{display:block;font-size:12px;font-weight:750;color:#46536b;margin:13px 0 6px}.contact-box input,.contact-box textarea,.contact-box select{width:100%;padding:12px 13px;border:1px solid #dce4f0;border-radius:10px;font:inherit;font-size:14px;background:#fff;color:var(--ink)}.contact-box textarea{min-height:110px;resize:vertical}.contact-box .btn{width:100%;margin-top:17px;cursor:pointer}.form-help{font-size:11px;color:var(--muted);margin:10px 0 0}.contact-detail{display:flex;gap:12px;align-items:center;margin-top:20px;color:#43516a;font-size:14px}.contact-detail b{color:var(--blue)}
+    footer{background:#091229;color:#c0cce0;padding:42px 0 24px}.foot-top{display:flex;justify-content:space-between;gap:30px;align-items:start;padding-bottom:30px;border-bottom:1px solid #ffffff1a}.foot-brand{color:#fff}.foot-top p{max-width:390px;color:#95a6c3;font-size:13px}.foot-links{display:flex;gap:22px;flex-wrap:wrap;font-size:13px}.foot-links a:hover{color:#fff}.foot-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:20px;color:#8293b1;font-size:11px}.legal-note{max-width:1120px;margin:18px auto 0;color:#8494af;font-size:11px;line-height:1.6}
+    @media(max-width:850px){.hero-grid,.how-grid,.contact-grid{grid-template-columns:1fr;gap:35px}.visual{min-height:290px}.cards{grid-template-columns:1fr 1fr}.hero{padding:70px 0}.cta-panel{align-items:flex-start;flex-direction:column}.trust-row{grid-template-columns:1fr;gap:10px}.trust-item{justify-content:flex-start}}
+    @media(max-width:620px){.wrap{width:min(100% - 30px,1120px)}.nav{height:66px}.links{display:none}.menu{display:inline-flex}.hero h1{letter-spacing:-1.8px}.hero p{font-size:16px}.cards{grid-template-columns:1fr}.price-card .desc{min-height:0}.cta-panel{padding:30px 24px}.cta-panel h2{font-size:28px}.foot-top,.foot-bottom{flex-direction:column}.visual{min-height:260px}.domain-card{max-width:320px}.orbit{width:260px;height:260px}section{padding:68px 0}}
+  </style>
+</head>
+<body>
+  <div class="top"><strong>DomainLaunch</strong> · Helping UK businesses get the right web address</div>
+  <header><div class="wrap nav">
+    <a class="brand" href="#home"><span class="logo">D</span>DomainLaunch</a>
+    <nav class="links" aria-label="Main navigation"><a href="#services">Services</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#payments">Payments</a><a href="#faq">FAQs</a></nav>
+    <a class="btn menu" href="#contact">Get in touch</a><a class="btn" href="#contact">Find a domain</a>
+  </div></header>
+  <main>
+    <section class="hero" id="home"><div class="wrap hero-grid">
+      <div><div class="eyebrow"><span class="dot"></span> Domain services for UK businesses</div>
+        <h1>The right domain.<br><span>A stronger online identity.</span></h1>
+        <p>Find a web address that fits your business. DomainLaunch helps you explore domain options, arrange acquisition and keep your domain organised.</p>
+        <div class="hero-actions"><a class="btn" href="#contact">Tell us what you need <span aria-hidden="true"> →</span></a><a class="btn ghost" href="#services">Explore services</a></div>
+        <div class="hero-note">Clear options · Straightforward support · No pressure</div>
+      </div>
+      <div class="visual" aria-hidden="true"><div class="orbit"></div><div class="spark">✦</div><div class="spark two">✧</div><div class="domain-card"><div class="tiny">Your next online address</div><h3>yourbusiness.co.uk</h3><div class="domain-row"><span>Domain options</span><strong>Explore</strong></div><div class="domain-row"><span>Setup and transfer</span><strong>Supported</strong></div><div class="domain-row"><span>Ongoing management</span><strong>Available</strong></div></div></div>
+    </div></section>
+    <div class="trust"><div class="wrap trust-row"><div class="trust-item"><b>✓</b> Clear, upfront options</div><div class="trust-item"><b>⌁</b> Help with domain transfers</div><div class="trust-item"><b>◎</b> Ongoing management available</div></div></div>
+    <section class="services" id="services"><div class="wrap"><div class="section-head"><div class="kicker">What we do</div><h2>Domain help, made simpler</h2><p>Whether you need a new web address or help looking after one you already own, choose the service that suits you.</p></div>
+      <div class="cards">
+        <article class="card"><div class="iconbox">⌕</div><h3>Domain acquisition</h3><p>Get help finding and arranging a domain name that matches your business and plans.</p><ul><li>Discuss the name you want</li><li>Explore available alternatives</li><li>Agree costs before proceeding</li></ul></article>
+        <article class="card"><div class="iconbox">↗</div><h3>Domain leasing</h3><p>Ask about using an eligible domain through an agreed monthly arrangement.</p><ul><li>Written terms before starting</li><li>Clear monthly pricing</li><li>Ownership and exit terms explained</li></ul></article>
+        <article class="card"><div class="iconbox">⚙</div><h3>Domain management</h3><p>Get help with the day-to-day administration of a domain you own.</p><ul><li>Renewal administration</li><li>DNS and settings support</li><li>Help with transfer questions</li></ul></article>
+      </div>
+    </div></section>
+    <section id="how"><div class="wrap how-grid"><div class="how-intro"><div class="kicker">How it works</div><h2>A straightforward way to get started</h2><p>Tell us what you are trying to achieve. We will explain the available options and any costs before you decide whether to go ahead.</p><a class="btn" href="#contact">Start an enquiry</a></div>
+      <div class="steps"><div class="step"><div class="num">01</div><div><h3>Tell us what you need</h3><p>Share your business name, preferred web address or the domain you already own.</p></div></div><div class="step"><div class="num">02</div><div><h3>Review your options</h3><p>We check suitable options and explain availability, pricing and any important conditions.</p></div></div><div class="step"><div class="num">03</div><div><h3>Choose what works for you</h3><p>If you want to proceed, the agreed steps, responsibilities and costs are confirmed in writing first.</p></div></div><div class="step"><div class="num">04</div><div><h3>Get set up</h3><p>We help coordinate the agreed registration, transfer or management service.</p></div></div></div>
+    </div></section>
+    <section class="pricing" id="pricing"><div class="wrap"><div class="section-head"><div class="kicker">Simple service options</div><h2>Choose the support you need</h2><p>Example starting prices are shown below. A final quote depends on the domain and the work involved.</p></div>
+      <div class="cards">
+        <article class="price-card"><h3>Buy a domain</h3><p class="desc">A one-off purchase for an agreed domain.</p><div class="price">From £99 <small>one-off</small></div><div class="price-note">Illustrative starting price</div><ul><li>Discuss a suitable domain</li><li>Agree the total price first</li><li>Transfer arranged to the buyer</li></ul><a class="btn ghost" href="#contact">Request a purchase quote</a></article>
+        <article class="price-card featured"><span class="tag">Ask us</span><h3>Lease a domain</h3><p class="desc">Monthly use of an eligible domain under written terms.</p><div class="price">From £19.99 <small>/ month</small></div><div class="price-note">Illustrative starting price</div><ul><li>Monthly arrangement</li><li>Usage and ownership explained</li><li>Cancellation and exit terms agreed</li></ul><a class="btn" href="#contact">Request a leasing quote</a></article>
+        <article class="price-card"><h3>Manage a domain</h3><p class="desc">Help administering a domain that you own.</p><div class="price">From £9.99 <small>/ month</small></div><div class="price-note">Illustrative starting price</div><ul><li>Agreed management tasks</li><li>Renewal administration support</li><li>Help with domain settings</li></ul><a class="btn ghost" href="#contact">Request management setup</a></article>
+      </div><p class="disclaimer">Prices are examples, not a binding offer. Domain registration, renewal, premium-domain and third-party fees may be additional. Exact scope and costs will be confirmed before any service begins.</p>
+    </div></section>
 
+    <section class="pricing" id="payments">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Secure checkout</div>
+          <h2>Make a payment</h2>
+          <p>Use a secure Stripe checkout link after your service and total price have been confirmed in writing.</p>
+        </div>
+        <div class="cards">
+          <article class="price-card">
+            <h3>Domain purchase</h3>
+            <p class="desc">Pay for a domain purchase once the exact domain, transfer process and total price have been agreed.</p>
+            <a class="btn stripe-link" data-payment="domain" href="#contact">Request a payment link</a>
+          </article>
+          <article class="price-card">
+            <h3>Domain management</h3>
+            <p class="desc">Pay for an agreed management service. Any recurring billing must be explained before checkout.</p>
+            <a class="btn stripe-link" data-payment="management" href="#contact">Request a payment link</a>
+          </article>
+          <article class="price-card">
+            <h3>Other services</h3>
+            <p class="desc">For leasing or a custom service, contact DomainLaunch first so the written terms and price are clear.</p>
+            <a class="btn ghost" href="#contact">Request a quote</a>
+          </article>
+        </div>
+        <p class="disclaimer">Payments are not enabled yet. These buttons will only open Stripe when genuine Payment Links are added by the account owner. Do not pay until you have received and checked your agreed service details.</p>
+      </div>
+    </section>
+
+    <section class="cta"><div class="wrap"><div class="cta-panel"><div><h2>Have a domain in mind?</h2><p>Send us a few details and we can discuss possible next steps. There is no obligation to proceed.</p></div><a class="btn" href="#contact">Make an enquiry →</a></div></div></section>
+    <section class="faq" id="faq"><div class="wrap"><div class="section-head"><div class="kicker">FAQs</div><h2>Good to know</h2><p>A few answers to common domain questions.</p></div><div class="faq-list">
+      <details><summary>Will I own a domain I buy?</summary><p>For an outright purchase, the intended process is to transfer the domain registration to you or your business. The registrant details and transfer completion should be checked before treating the sale as complete.</p></details>
+      <details><summary>Is leasing the same as owning?</summary><p>No. In a lease arrangement, the domain registrant usually remains the domain owner and you receive only the usage rights set out in the written agreement. The terms should explain payment, renewal, cancellation and what happens at the end.</p></details>
+      <details><summary>Can you manage a domain I already own?</summary><p>Yes, subject to agreeing the tasks and access needed. You remain the registrant, and the service should clearly state who is responsible for renewals, DNS changes and approvals.</p></details>
+      <details><summary>Are the prices fixed?</summary><p>The figures on this page are illustrative starting prices. The final quote depends on the domain, third-party costs and the service requested. You should receive the full price before agreeing.</p></details>
+      <details><summary>Do I have to go ahead after making an enquiry?</summary><p>No. An enquiry is just a way to discuss your requirements. No purchase, transfer or paid service should begin until the details and terms have been agreed.</p></details>
+    </div></div></section>
+    <section class="contact" id="contact"><div class="wrap contact-grid"><div class="contact-copy"><div class="kicker">Contact</div><h2>Let's find the right next step</h2><p>Tell us a little about the domain you are looking for or the support you need. We can then discuss suitable options.</p><div class="contact-detail"><b>✉</b><span>EMAIL: <strong>hello@domainlaunch.online</strong></span></div><div class="contact-detail"><b>⌖</b><span>Serving businesses across the UK</span></div></div>
+      <form class="contact-box" id="enquiryForm"><h3 style="margin:0;color:var(--navy)">Send an enquiry</h3><label for="name">Your name</label><input id="name" name="name" autocomplete="name" placeholder="Name" required><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><label for="service">What are you interested in?</label><select id="service" name="service"><option>Buying a domain</option><option>Leasing a domain</option><option>Domain management</option><option>Not sure yet</option></select><label for="message">Tell us a little more</label><textarea id="message" name="message" placeholder="What domain or service do you have in mind?"></textarea><button class="btn" type="submit">Prepare email enquiry →</button><p class="form-help">Submitting this form opens an email draft addressed to hello@domainlaunch.online. Check that this inbox is active before publishing.</p></form>
+    </div></section>
+  </main>
+  <footer><div class="wrap"><div class="foot-top"><div><a class="brand foot-brand" href="#home"><span class="logo">D</span>DomainLaunch</a><p>Helping UK businesses find, acquire and manage domain names with clear information and straightforward support.</p></div><nav class="foot-links" aria-label="Footer navigation"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#faq">FAQs</a><a href="#contact">Contact</a><a href="#">Privacy notice</a><a href="#">Terms</a></nav></div><div class="foot-bottom"><span>© <span id="year"></span> DomainLaunch. All rights reserved.</span><span>Domain services for UK businesses</span></div><p class="legal-note">DomainLaunch is a working website draft. Stripe checkout is disabled until genuine Payment Links are added. Before taking payments, confirm business contact details, privacy information, service terms, refund/cancellation terms and domain-transfer arrangements. Confirm domain availability and rights before making an offer. Do not imply ownership or availability unless verified.</p></div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // STRIPE SETUP:
+    // Replace each empty value below with the matching Stripe Payment Link URL.
+    // Create these links in the Stripe account owner's dashboard.
+    // Never paste a Stripe secret key into this public website file.
+    const stripePaymentLinks = {
+      domain: '',
+      management: ''
+    };
+    document.querySelectorAll('.stripe-link').forEach(function(button) {
+      const paymentType = button.dataset.payment;
+      const paymentUrl = stripePaymentLinks[paymentType];
+      if (paymentUrl && /^https:\/\/buy\.stripe\.com\//.test(paymentUrl)) {
+        button.href = paymentUrl;
+        button.target = '_blank';
+        button.rel = 'noopener noreferrer';
+        button.textContent = 'Pay securely with Stripe';
+      } else {
+        button.href = '#contact';
+        button.textContent = 'Request a payment link';
+      }
+    });
+
+    document.getElementById('enquiryForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const businessEmail = 'hello@domainlaunch.online';
+      if (businessEmail === 'YOUR-EMAIL@example.com') { alert('Before using the enquiry form, replace YOUR-EMAIL@example.com in the website code with your business email address.'); return; }
+      const f = new FormData(this);
+      const subject = encodeURIComponent('DomainLaunch website enquiry — ' + f.get('service'));
+      const body = encodeURIComponent('Name: '+f.get('name')+'\nEmail: '+f.get('email')+'\nService: '+f.get('service')+'\n\n'+f.get('message'));
+      window.location.href = 'mailto:'+businessEmail+'?subject='+subject+'&body='+body;
+    });
+  </script>
+</body>
+</html>
