@@ -79,9 +79,9 @@
             <a class="btn stripe-link" data-payment="management" href="#contact">Request a payment link</a>
           </article>
           <article class="price-card">
-            <h3>Other services</h3>
-            <p class="desc">For leasing or a custom service, contact DomainLaunch first so the written terms and price are clear.</p>
-            <a class="btn ghost" href="#contact">Request a quote</a>
+            <h3>Domain leasing</h3>
+            <p class="desc">Pay for an agreed domain-leasing arrangement after reviewing the written terms.</p>
+            <a class="btn stripe-link" data-payment="leasing" href="#contact">Request a payment link</a>
           </article>
         </div>
         <p class="disclaimer">Payments are not enabled yet. These buttons will only open Stripe when genuine Payment Links are added by the account owner. Do not pay until you have received and checked your agreed service details.</p>
@@ -105,12 +105,13 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // STRIPE SETUP:
-    // Replace each empty value below with the matching Stripe Payment Link URL.
+    // The domain-purchase and leasing links have been added. Add your management Payment Link below.
     // Create these links in the Stripe account owner's dashboard.
     // Never paste a Stripe secret key into this public website file.
     const stripePaymentLinks = {
-      domain: '',
-      management: ''
+      domain: 'https://buy.stripe.com/3cI8wO9f5axraX78zjcIE00',
+      leasing: 'https://buy.stripe.com/28E00igHxbBv5CN7vfcIE01',
+      management: 'PASTE_YOUR_DOMAIN_MANAGEMENT_PAYMENT_LINK_HERE'
     };
     document.querySelectorAll('.stripe-link').forEach(function(button) {
       const paymentType = button.dataset.payment;
